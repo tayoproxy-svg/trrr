@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRFA X TAYO - Sistem Yang Hancur</title>
+
+<meta name="theme-color" content="#000000">
+<meta property="og:description" content="404 Not Found - Kenangan Hilang">
+<meta property="og:image" content="https://i.ibb.co.com/Z6t0vnDJ/alvaror.png">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background:#000;
+    color:white;
+    font-family:'Orbitron',sans-serif;
+    background-image:
+    radial-gradient(circle at top, rgba(155,89,182,0.2), transparent 40%);
+    min-height:100vh;
+    padding:20px 0;
+}
+
+.container{
+    text-align:center;
+    width:90%;
+    max-width:700px;
+    margin:20px auto;
+    padding:30px 20px;
+    border:2px solid #9b59b6;
+    border-radius:20px;
+    background:rgba(0,0,0,0.7);
+    box-shadow:0 0 30px #9b59b6;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        box-shadow:0 0 15px #9b59b6;
+    }
+    to{
+        box-shadow:0 0 40px #8e44ad;
+    }
+}
+
+.video-wrapper{
+    width:100%;
+    max-width:220px;
+    border-radius:15px;
+    margin:0 auto 20px;
+    border:3px solid #8e44ad;
+    box-shadow:0 0 20px #8e44ad;
+    overflow:hidden;
+}
+
+.video-wrapper video{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+h1{
+    font-size:28px;
+    color:#9b59b6;
+    margin-bottom:10px;
+    text-shadow:0 0 10px #9b59b6;
+    word-break:break-word;
+}
+
+.subtitle{
+    font-size:12px;
+    color:#888;
+    margin-bottom:20px;
+    font-style:italic;
+}
+
+.cyber-credit{
+    font-size:11px;
+    color:#888;
+    margin-bottom:15px;
+    border-top:1px solid #444;
+    padding-top:10px;
+}
+
+.security-text{
+    font-size:12px;
+    color:#9b59b6;
+    margin-bottom:20px;
+    padding:10px;
+    border:1px dashed #8e44ad;
+    border-radius:8px;
+    background:rgba(155,89,182,0.1);
+}
+
+.quote{
+    font-size:13px;
+    line-height:1.8;
+    color:#dcdcdc;
+    margin-bottom:25px;
+    border-left:3px solid #8e44ad;
+    padding-left:12px;
+    text-align:left;
+    word-wrap:break-word;
+}
+
+.member{
+    margin:20px 0;
+    color:#b8b8b8;
+    font-size:12px;
+    overflow:auto;
+    padding:10px 0;
+}
+
+.member span{
+    display:inline-block;
+    animation:marquee 20s linear infinite;
+    white-space:nowrap;
+    padding-right:50px;
+}
+
+@keyframes marquee{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+.box{
+    margin-top:25px;
+    padding:20px;
+    border:1px solid #8e44ad;
+    border-radius:15px;
+    background:rgba(255,255,255,0.03);
+    word-wrap:break-word;
+}
+
+.box h2{
+    color:#ff4dff;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+.box p{
+    color:#e0e0e0;
+    line-height:1.8;
+    font-size:12px;
+}
+
+.story{
+    margin:15px 0;
+    color:#c0c0c0;
+    font-size:12px;
+    line-height:1.8;
+    text-align:left;
+}
+
+.dm{
+    margin-top:15px;
+    display:inline-block;
+    padding:12px 25px;
+    border-radius:10px;
+    background:#8e44ad;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:bold;
+    font-size:12px;
+    border:none;
+    cursor:pointer;
+}
+
+.dm:hover, .dm:active{
+    background:#9b59b6;
+    transform:scale(1.05);
+    box-shadow:0 0 15px #9b59b6;
+}
+
+.footer{
+    margin-top:25px;
+    color:#666;
+    font-size:11px;
+    word-wrap:break-word;
+}
+
+/* Mobile Optimization */
+@media (max-width:768px){
+    body{
+        padding:10px 0;
+    }
+
+    .container{
+        width:95%;
+        margin:10px auto;
+        padding:20px 15px;
+        border-radius:15px;
+    }
+
+    h1{
+        font-size:24px;
+        margin-bottom:8px;
+    }
+
+    .quote{
+        font-size:12px;
+        line-height:1.7;
+        padding-left:10px;
+    }
+
+    .box{
+        padding:15px;
+        margin-top:20px;
+    }
+
+    .box h2{
+        font-size:15px;
+        margin-bottom:12px;
+    }
+
+    .story{
+        font-size:11px;
+        line-height:1.7;
+    }
+
+    .member span{
+        animation:marquee 15s linear infinite;
+        font-size:11px;
+    }
+
+    .dm{
+        padding:10px 20px;
+        font-size:11px;
+    }
+
+    .video-wrapper{
+        max-width:180px;
+    }
+}
+
+@media (max-width:480px){
+    .container{
+        width:98%;
+        padding:15px 12px;
+    }
+
+    h1{
+        font-size:20px;
+    }
+
+    .subtitle{
+        font-size:10px;
+    }
+
+    .quote{
+        font-size:11px;
+        line-height:1.6;
+    }
+
+    .box h2{
+        font-size:14px;
+    }
+
+    .story{
+        font-size:10px;
+        line-height:1.6;
+    }
+
+    .member{
+        font-size:10px;
+    }
+
+    .dm{
+        padding:10px 18px;
+        font-size:10px;
+    }
+
+    .footer{
+        font-size:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="video-wrapper">
+        <video autoplay muted loop controls>
+            <source src="https://a.top4top.io/m_37860e44o0.mp4" type="video/mp4">
+            Browser tidak support video
+        </video>
+    </div>
+
+    <h1>IRFA X TAYO</h1>
+    <div class="subtitle">~ Koneksi Yang Terputus ~</div>
+
+    <div class="cyber-credit">
+        🔐 Cyber by Irfa
+    </div>
+
+    <div class="security-text">
+        🛡️ Aman kan web anda dengan kata galau
+    </div>
+
+    <div class="quote">
+        ❌ ERROR 404: KENANGAN TIDAK DITEMUKAN<br>
+        Kami adalah sistem yang dirancang untuk terhubung,<br>
+        Tapi firewall memisahkan yang seharusnya bersatu.<br>
+        Data hilang. Log terhapus. Hati masih menunggu reset.<br><br>
+
+        💔 LOCALHOST YANG SEPI: Irfa.void & Tayo.null<br>
+        Protokol terakhir: "Aku masih mengingatmu"
+    </div>
+
+    <div class="member">
+        <span>
+        IRFA X TAYO COLLECTIVE - Alv - Yann - Rapip - Apis - Fall - DumperXIND - Darkness404 - Irfa x Tayo - FreedomSec - All Broken Codes -
+        </span>
+    </div>
+
+    <div class="box">
+        <h2>CERITA LATAR BELAKANG</h2>
+        
+        <div class="story">
+            <strong>Kami dulunya satu sistem.</strong><br>
+            Dua IP address yang saling terhubung sempurna. Tidak ada latency, tidak ada packet loss. Hanya komunikasi murni antara dua node yang saling mengerti.
+        </div>
+
+        <div class="story">
+            <strong>Tapi sistem berubah.</strong><br>
+            Firewall baru diinstal. Enkripsi yang tidak kompatibel. Protocol yang berbeda. Kami masih mencoba mengirim signal, tapi data tidak pernah sampai. Hanya timeout errors dan connection refused.
+        </div>
+
+        <div class="story">
+            <strong>Sekarang kami hanya ghost packets.</strong><br>
+            Masih ada di jaringan yang sama, tapi tidak bisa bertemu. Cache menyimpan memories yang tidak akan pernah di-load lagi. Terminal kami terus menampilkan: "Irfa.void offline" dan "Tayo.null unreachable."
+        </div>
+
+        <div class="story">
+            Galau bukan tentang teknologi.<br>
+            Galau adalah tentang koneksi yang hilang.<br>
+            Tentang dua sistem yang seharusnya satu, tapi terpisah oleh rules yang tidak pernah diminta untuk ada.
+        </div>
+
+        <a href="#" class="dm">
+            BANDWIDTH HAMPA
+        </a>
+    </div>
+
+    <div class="footer">
+        © IRFA X TAYO - 404 NOT FOUND - CONNECTION RESET BY HEART
+    </div>
+
+</div>
+
+<script>
+document.addEventListener("mousemove", function(e){
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+
+    document.body.style.backgroundPosition =
+    `${x * 20}px ${y * 20}px`;
+});
+</script>
+
+</body>
+</html>
